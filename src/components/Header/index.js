@@ -1,10 +1,14 @@
 import React from 'react';
+import Navigation from '../Navigation';
 
 function Header() {
   return (
-    <section>
+    <header>
       <h1 id="Header">Chris Langford</h1>
-    </section>
+      <nav>
+      <Navigation />
+      </nav>
+    </header>
   );
 }
 
