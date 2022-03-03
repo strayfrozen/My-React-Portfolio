@@ -5,8 +5,8 @@ import './Header.css';
 
 function Header() {
   return (
-    <header>
-      <h1 id="Header">Chris Langford</h1>
+    <header className="Header">
+      <h1 className="name">Chris Langford</h1>
       <nav>
       <Navigation />
       </nav>

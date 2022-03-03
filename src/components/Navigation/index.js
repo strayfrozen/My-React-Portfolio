@@ -5,10 +5,10 @@ function Navigation() {
 
   return (
     <nav className="navbar">
-        <h2 className='nav-link'>About Me</h2>
-        <h2 className='nav-link'>Portfolio</h2>
-        <h2 className='nav-link'>Contact</h2>
-        <h2 className='nav-link'>Resume</h2>
+        <a href="/" className="nav-link">About Me</a>
+        <a href="/" className="nav-link">Portfolio</a>
+        <a href="/" className="nav-link">Contact</a>
+        <a href="/" className="nav-link">Resume</a>
     </nav>
   );
 }
