@@ -7,11 +7,9 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Project from './components/Project';
+import {BrowserRouter} from 'react-router-dom'
 
 import{Switch,Route, Redirect, withRouter} from 'react-router-dom'
-
-
-
 
 
 
@@ -20,17 +18,20 @@ function App() {
   return (
     <div>
       <main>
+        <BrowserRouter>
         <Header />
-        <AboutMe />
-
+        
+        <Switch>
         <Route path="/about" component={AboutMe} />
-        <Contact />
-        <Project />
-        <Resume />
+        <Route path="/contact" component={Contact} />
+        <Route path="/project" component={Project} />
+        <Route path="/resume" component={Resume} />
+        </Switch>
         <Footer />
+        </BrowserRouter>
       </main>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
