@@ -8,6 +8,10 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Project from './components/Project';
 
+import{Switch,Route, Redirect, withRouter} from 'react-router-dom'
+
+
+
 
 
 
@@ -18,6 +22,8 @@ function App() {
       <main>
         <Header />
         <AboutMe />
+
+        <Route path="/about" component={AboutMe} />
         <Contact />
         <Project />
         <Resume />
