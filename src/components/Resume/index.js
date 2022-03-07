@@ -6,10 +6,8 @@ function Resume() {
   return (
     
     <section >
-        <article>
          <h2>Resume</h2>
-        <a href="https://my.indeed.com/p/chrisl-hs3p1uo">Link to Resume</a>
-        </article>
+        <a href="https://my.indeed.com/p/chrisl-hs3p1uo" className="box">Link to Resume</a>
     </section>
   );
 }
